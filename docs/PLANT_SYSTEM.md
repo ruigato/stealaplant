@@ -97,7 +97,7 @@ The game features **10 distinct rarity tiers**, from most common to most rare:
 
 ### Pricing Structure
 - **Base Price**: Cost to purchase plant from conveyor
-- **Mutation Multiplier**: Mutations increase price
+- **Mutation Effect**: Mutations DO NOT change price (only earnings!)
 - **Rarity Scaling**: Each tier is significantly more expensive than the previous
 
 ### Earnings System
@@ -110,7 +110,7 @@ The game features **10 distinct rarity tiers**, from most common to most rare:
 The team is currently working on:
 - Individual plant prices for each rarity
 - Earnings per second for each rarity
-- Mutation price multipliers
+- Mutation earnings multipliers (price stays same!)
 - Progression curve to keep gameplay engaging
 
 ## Plant Properties

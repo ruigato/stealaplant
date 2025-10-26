@@ -98,7 +98,37 @@ Give each plant character:
 
 ## World Design
 
-### Spawn Area (Trees)
+### Map Layout & Base System
+
+**6 Bases Configuration**:
+```
+Visual Description:
+- 6 distinct base locations spread across the map
+- Each base is identical in structure but positioned differently
+- Enough space between bases to feel separate but not too far to walk
+- Perhaps arranged in a circle or hexagon pattern?
+- Central area or pathways connecting all bases
+```
+
+**Building Tips**:
+- Symmetrical layout for fairness (no "best" base position)
+- Clear visual markers for each base (numbered signs?)
+- Mini-map showing all 6 base locations
+- Walking distance: ~5-10 seconds between adjacent bases
+- Consider terrain variety (some on hills, some flat, etc.)
+
+**Base Claiming Visual**:
+- **Unclaimed base**: Neutral appearance, gray or white
+- **Claimed base**: Player's name displayed above
+- **Your base**: Special highlight or glow
+- **Other players' bases**: Different color coding
+- Clear indication of which base belongs to who
+
+### Individual Base Components
+
+Each of the 6 bases includes all these elements:
+
+### Spawn Area (Trees) - Per Base
 ```
 Visual Description:
 - Two large trees with thick trunks
@@ -114,7 +144,7 @@ Visual Description:
 - Add particle effects for spawning plants
 - Ensure good lighting in this area
 
-### Grass Conveyor Belt
+### Grass Conveyor Belt - Per Base
 ```
 Visual Description:
 - Moving grass surface (not metal)
@@ -122,6 +152,7 @@ Visual Description:
 - Wide enough for multiple plants
 - Clear direction of movement
 - Plants should be easily visible on it
+- Each base has its own independent conveyor
 ```
 
 **Building Tips**:
@@ -129,8 +160,9 @@ Visual Description:
 - Green baseplate with grass texture
 - Add subtle animation (grass blowing?)
 - Ensure plants don't fall through
+- Each conveyor operates independently
 
-### Wooden Base with Flower Pots
+### Wooden Base with Flower Pots - Per Base
 ```
 Visual Description:
 - Wooden platform/structure
@@ -147,7 +179,60 @@ Visual Description:
 - Leave room for expansion
 - Add small flower decorations around edges
 
-### Truck
+### Base Lock/Unlock System
+
+**CRITICAL VISUAL FEATURE** - Players must clearly see if a base is locked or unlocked:
+
+**Locked Base Visual** 🔒:
+```
+Visual Description:
+- Door/gate CLOSED in front of base
+- Red glow or force field around base perimeter
+- Padlock icon floating above base
+- "LOCKED" text or sign
+- Dark or muted colors
+- Cannot see inside clearly (privacy)
+```
+
+**Building Tips**:
+- Invisible wall/collision when locked (prevents entry)
+- Tween animation when locking (door closing, shield appearing)
+- Red particle effects or red transparent parts
+- Sound effect when locking (click, thud)
+
+**Unlocked Base Visual** 🔓:
+```
+Visual Description:
+- Door/gate OPEN
+- Green glow or no barrier
+- Open padlock icon or no lock
+- "OPEN" text or welcoming sign
+- Bright, inviting colors
+- Can clearly see plants inside (tempting!)
+```
+
+**Building Tips**:
+- No collision when unlocked (free entry)
+- Tween animation when unlocking (door opening, shield disappearing)
+- Green particle effects or welcoming glow
+- Sound effect when unlocking (unlock sound, chime)
+
+**Lock/Unlock Button**:
+```
+Visual Description:
+- Big, obvious button/lever at base entrance
+- Toggle between locked/unlocked
+- Color changes based on state (red=locked, green=unlocked)
+- Icon shows current state
+```
+
+**Building Tips**:
+- ProximityPrompt in Roblox for easy interaction
+- Clear label: "Press E to Lock/Unlock"
+- Feedback animation when pressed (button push down)
+- Cooldown to prevent spam (1-2 seconds)
+
+### Truck - Per Base
 ```
 Visual Description:
 - Plant transport truck
@@ -221,6 +306,72 @@ When hovering/clicking plant on conveyor:
 - **Buy button**: Easy to click
 - **Show if can't afford**: Red or grayed out
 
+### Rebirth UI
+```
+Elements to Include:
+- Current rebirth count (displayed prominently)
+- Cost to rebirth
+- Bonuses you'll gain
+- What you'll lose warning
+- Confirm/Cancel buttons
+```
+
+**Design Tips**:
+- **Big warning**: "You will lose all plants and money!"
+- **Show benefits clearly**: +10% earnings, etc.
+- **Confirmation dialog**: Prevent accidental rebirths
+- **Rebirth badge**: Show current rebirth on screen always
+- **Exciting animation**: When rebirth happens
+
+### Stealing Notifications
+```
+Alert Types:
+- "Player X entered your base!"
+- "Player X stole [Plant Name]!"
+- "Your base is being robbed!"
+- "Base locked successfully"
+```
+
+**Design Tips**:
+- **Urgent alerts**: Red color, alarm icon
+- **Sound effects**: Attention-grabbing but not annoying
+- **Quick action button**: "Lock Base Now!" in notification
+- **Don't spam**: Combine multiple steals into one update
+- **Visible but not intrusive**: Corner of screen
+
+### Base Claiming UI
+```
+When joining server:
+- Show all 6 bases on map
+- Highlight available (unclaimed) bases
+- Show claimed bases with owner names
+- "Claim This Base" button
+```
+
+**Design Tips**:
+- **Clear availability**: Green = free, Red = taken
+- **Player names visible**: Know who's in each base
+- **Easy selection**: Click base to claim
+- **Confirmation**: "Are you sure?" before claiming
+- **Show distance**: Which bases are close together
+
+### Mini-Map
+```
+Elements:
+- All 6 base locations
+- Your base highlighted (bright color)
+- Other players' bases (different color)
+- Your current position
+- Steal alerts (flashing icon if being robbed)
+```
+
+**Design Tips**:
+- **Always visible**: Top corner of screen
+- **Toggle on/off**: Button to hide if desired
+- **Click to navigate**: See where bases are
+- **Lock status icons**: Padlock icons on locked bases
+- **Player dots**: Show where other players are currently
+
 ## Special Effects
 
 ### Particle Effects
@@ -234,6 +385,11 @@ Add excitement and polish:
 | **Mutation Glow** | Mutated plants | Continuous subtle glow |
 | **Rainbow Trail** | Rainbow mutation | Color-shifting particle trail |
 | **Truck Departure** | Truck leaves | Dust cloud or exhaust |
+| **Steal Flash** | Plant stolen | Red flash/poof when plant taken |
+| **Base Lock** | Locking base | Force field appearing animation |
+| **Base Unlock** | Unlocking base | Force field disappearing |
+| **Rebirth Explosion** | Rebirth | Huge impressive effect, reset visual |
+| **Alert Pulse** | Being robbed | Red pulsing glow around base |
 
 **Implementation Tips**:
 - Don't overdo it (too many = lag)
@@ -252,6 +408,10 @@ Bring the world to life:
 | **Money Pop** | UI | Number increase animation |
 | **Button Bounce** | UI | Hover and click feedback |
 | **Truck Drive** | Truck | Wheels turning, movement |
+| **Door Close/Open** | Base lock | Smooth door animation for locking |
+| **Plant Vanish** | Stealing | Plant disappears when stolen |
+| **Rebirth Flash** | Rebirth UI | Screen flash and zoom effect |
+| **Alert Shake** | Notifications | Shake animation when robbed |
 
 ## Portuguese Cultural Elements
 

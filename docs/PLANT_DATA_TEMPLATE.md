@@ -219,13 +219,15 @@ Use this template to record the specific data for each plant rarity. Fill in the
 
 ## Mutation Multipliers
 
+**IMPORTANT**: Mutations DO NOT change the purchase price! Only earnings increase!
+
 ### Silver Mutation 🥈
 
 | Property | Value |
 |----------|-------|
 | **Spawn Rate** | TBD % (e.g., 5%) |
-| **Price Multiplier** | TBD x (e.g., 2x) |
 | **Earnings Multiplier** | TBD x (e.g., 2x) |
+| **Purchase Price** | Same as base plant |
 | **Visual Effect** | Silver metallic tint + subtle shine |
 
 ---
@@ -235,8 +237,8 @@ Use this template to record the specific data for each plant rarity. Fill in the
 | Property | Value |
 |----------|-------|
 | **Spawn Rate** | TBD % (e.g., 1%) |
-| **Price Multiplier** | TBD x (e.g., 5x) |
 | **Earnings Multiplier** | TBD x (e.g., 5x) |
+| **Purchase Price** | Same as base plant |
 | **Visual Effect** | Golden glow + sparkle particles |
 
 ---
@@ -246,8 +248,8 @@ Use this template to record the specific data for each plant rarity. Fill in the
 | Property | Value |
 |----------|-------|
 | **Spawn Rate** | TBD % (e.g., 0.2%) |
-| **Price Multiplier** | TBD x (e.g., 12x) |
 | **Earnings Multiplier** | TBD x (e.g., 12x) |
+| **Purchase Price** | Same as base plant |
 | **Visual Effect** | Crystal facets + bright reflections |
 
 ---
@@ -257,8 +259,8 @@ Use this template to record the specific data for each plant rarity. Fill in the
 | Property | Value |
 |----------|-------|
 | **Spawn Rate** | TBD % (e.g., 0.05%) |
-| **Price Multiplier** | TBD x (e.g., 30x) |
 | **Earnings Multiplier** | TBD x (e.g., 30x) |
+| **Purchase Price** | Same as base plant |
 | **Visual Effect** | Color-shifting hue + rainbow trail |
 
 ---

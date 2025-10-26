@@ -11,29 +11,29 @@ There are **4 mutation tiers**, from most common to rarest:
 ### 1. Silver 🥈
 - **Visual**: Silver/metallic sheen overlay
 - **Mutation Rate**: TBD (Most common mutation)
-- **Price Multiplier**: TBD (e.g., 2x base price)
 - **Earnings Multiplier**: TBD (e.g., 2x base earnings)
+- **Purchase Price**: Same as unmutated plant
 - **Rarity**: Uncommon mutation
 
 ### 2. Gold 🥇
 - **Visual**: Golden/yellow metallic overlay
 - **Mutation Rate**: TBD (Rare mutation)
-- **Price Multiplier**: TBD (e.g., 5x base price)
 - **Earnings Multiplier**: TBD (e.g., 5x base earnings)
+- **Purchase Price**: Same as unmutated plant
 - **Rarity**: Rare mutation
 
 ### 3. Diamond 💎
 - **Visual**: Crystal/diamond sparkle effect
 - **Mutation Rate**: TBD (Very rare mutation)
-- **Price Multiplier**: TBD (e.g., 10x base price)
 - **Earnings Multiplier**: TBD (e.g., 10x base earnings)
+- **Purchase Price**: Same as unmutated plant
 - **Rarity**: Very rare mutation
 
 ### 4. Rainbow 🌈
 - **Visual**: Multicolor/rainbow shifting effect
 - **Mutation Rate**: TBD (Ultra rare mutation)
-- **Price Multiplier**: TBD (e.g., 25x base price)
 - **Earnings Multiplier**: TBD (e.g., 25x base earnings)
+- **Purchase Price**: Same as unmutated plant
 - **Rarity**: Ultra rare mutation, the ultimate variant
 
 ## How Mutations Work
@@ -58,21 +58,15 @@ Each mutation adds a distinct visual overlay to the base plant design:
 
 ## Economic Impact
 
-### Price Scaling
-Mutations significantly increase plant purchase price:
+### Important: Price vs Earnings
 
-| Mutation | Price Impact | Example (100 coin plant) |
-|----------|--------------|--------------------------|
-| None | Base Price | 100 coins |
-| Silver | 2-3x | 200-300 coins |
-| Gold | 5-7x | 500-700 coins |
-| Diamond | 10-15x | 1,000-1,500 coins |
-| Rainbow | 25-50x | 2,500-5,000 coins |
-
-*Note: Exact multipliers to be determined during balancing*
+**Mutations DO NOT change the purchase price!**
+- All mutations of the same plant cost THE SAME to buy
+- Example: Common plant costs 10 coins whether Silver, Gold, or Rainbow
+- **ONLY the earnings per second increase** with mutations
 
 ### Earnings Scaling
-Mutations also boost money generation per second:
+Mutations boost money generation per second:
 
 | Mutation | Earnings Impact | Example (10/sec plant) |
 |----------|-----------------|------------------------|
@@ -107,9 +101,11 @@ Suggested Rate Structure (TBD):
 
 ### Player Decisions
 Mutations create interesting choices:
-- **Mutated Common** vs **Unmutated Rare**: Which is better value?
-- **Save up** for mutated rare plants or **buy many** unmutated plants?
-- **Complete collection** or **focus on mutations**?
+- **Always grab mutations!** - Same price but better earnings
+- **Rainbow Common** can earn more than unmutated Epic!
+- **Wait for mutations** on expensive plants or buy normal ones?
+- **Complete collection** or **focus on best earnings**?
+- **Risk assessment**: Is mutated plant worth the conveyor wait time?
 
 ### Collection Goals
 Mutations expand collection objectives:

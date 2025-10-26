@@ -45,28 +45,35 @@ This document helps balance the game economy - prices, earnings, and progression
 
 ## Mutation Multipliers
 
-### Suggested Multipliers
+### Important: Mutations Only Affect Earnings!
 
-| Mutation | Price Multiplier | Earnings Multiplier |
-|----------|------------------|---------------------|
-| None | 1x | 1x |
-| Silver | 2x | 2x |
-| Gold | 5x | 5x |
-| Diamond | 12x | 12x |
-| Rainbow | 30x | 30x |
+**Mutations DO NOT change purchase price** - only earnings per second increase!
+
+### Suggested Earnings Multipliers
+
+| Mutation | Purchase Price | Earnings Multiplier |
+|----------|---------------|---------------------|
+| None | Base Price | 1x |
+| Silver | Base Price (same!) | 2x |
+| Gold | Base Price (same!) | 5x |
+| Diamond | Base Price (same!) | 12x |
+| Rainbow | Base Price (same!) | 30x |
 
 ### Mutation Value Examples
-Example: Rare plant (250 base price, 18/sec earnings)
+Example: Rare plant (250 base price, 18/sec base earnings)
 
 | Mutation | Price | Earnings/Sec | Value Proposition |
 |----------|-------|--------------|-------------------|
 | None | 250 | 18 | Standard |
-| Silver | 500 | 36 | 2x everything |
-| Gold | 1,250 | 90 | Same as Epic plant! |
-| Diamond | 3,000 | 216 | Better than Epic! |
-| Rainbow | 7,500 | 540 | Better than Legendary! |
+| Silver | **250** | 36 | Same price, 2x earnings! |
+| Gold | **250** | 90 | Same price as unmutated! |
+| Diamond | **250** | 216 | Incredible value! |
+| Rainbow | **250** | 540 | Amazing deal! |
 
-**Key Insight**: Rainbow Common could be better than unmutated Epic!
+**Key Insight**:
+- Mutated plants are ALWAYS worth buying (same price, better earnings!)
+- Rainbow Common (10 cost, 15/sec) could earn MORE than unmutated Epic (1500 cost, 125/sec)!
+- Makes mutations extremely valuable and exciting to find
 
 ## Spawn Rates
 
